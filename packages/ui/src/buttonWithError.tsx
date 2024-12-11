@@ -15,10 +15,10 @@ export const ButtonWithError = () => {
             margin: "18px",
         }}
         onClick={() => {
-            throw new Error('Error from packages/ui/src/buttonWithError.tsx');
+            throw new Error('Another Frontend Error');
         }}
     >
-    Throw error from packages/ui/src/buttonWithError.tsx
+    Throw error from ui package
     </button>
   );
 };
