@@ -2,6 +2,7 @@
 
 import Head from "next/head";
 import * as Sentry from "@sentry/nextjs";
+import { ButtonWithError } from "@repo/ui/buttonWithError";
 
 export default function Page() {
   return (
@@ -62,6 +63,11 @@ export default function Page() {
         >
           Throw error!
         </button>
+
+        <div>
+          <h2>Shared component from packages/ui</h2>
+          <ButtonWithError />
+        </div>
 
         <p>
           Next, look for the error on the{" "}
